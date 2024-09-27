@@ -69,11 +69,10 @@ class Validate:
         :param attr:
         :return: bool
         """
-        valid_punctuation = [".", ","]
         for char in user_input:
             if char.isalpha():
                 return False
-            elif not char.isalnum() and char not in valid_punctuation:
+            elif not char.isalnum() and char not in [".", ","]:
                 return False
             else:
                 setattr(self, attr, user_input.lower())
