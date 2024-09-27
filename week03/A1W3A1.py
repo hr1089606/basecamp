@@ -13,7 +13,7 @@ class Validate:
 
     def is_valid_yes_or_no(self, user_input: str, attr: str) -> None:
         """
-        Checks if the user input is a valid Yes/No and updates the valid_input dictionary if valid.
+        Checks if the user input is a valid Yes/No.
         :param user_input:
         :param attr:
         :return: None
@@ -24,8 +24,7 @@ class Validate:
 
     def is_offer_or_rejection(self, user_input: str, attr: str) -> None:
         """
-        Checks if the user input is a valid answer: 'Job Offer' or 'rejection' and updates the
-        valid_input dictionary if valid.
+        Checks if the user input is a valid answer: 'Job Offer' or 'rejection'.
         :param user_input:
         :param attr:
         :return: None
@@ -36,8 +35,7 @@ class Validate:
 
     def is_name_valid(self, user_input: str, attr: str) -> bool:
         """
-        Checks if the user input is a valid name, returns a boolean and updates the
-        valid_input dictionary if valid.
+        Checks if the user input is a valid name, returns a boolean.
         :param user_input:
         :param attr:
         :return: bool
@@ -52,8 +50,7 @@ class Validate:
 
     def is_title_valid(self, user_input: str, attr: str) -> bool:
         """
-        Checks if the user input is a valid job title, returns a boolean and updates the
-        valid_input dictionary if valid.
+        Checks if the user input is a valid job title, returns a boolean.
         :param user_input:
         :param attr:
         :return: bool
@@ -67,8 +64,7 @@ class Validate:
 
     def is_salary_valid(self, user_input: str, attr: str) -> bool:
         """
-        Checks if the user input is a salary amount, returns a boolean and updates the
-        valid_input dictionary if valid.
+        Checks if the user input is a salary amount, returns a boolean.
         :param user_input:
         :param attr:
         :return: bool
@@ -86,8 +82,7 @@ class Validate:
 
     def is_date_valid(self, user_input: str, attr: str) -> bool:
         """
-        Checks if the user input is a valid date, returns a boolean and updates the
-        valid_input dictionary if valid.
+        Checks if the user input is a valid date, returns a boolean.
         :param user_input:
         :param attr:
         :return: bool
@@ -105,8 +100,7 @@ class Validate:
 
     def is_feedback_valid(self, user_input: str, attr: str) -> bool:
         """
-        Checks if the user input is a valid feedback length larger than two, returns a boolean and updates the
-        valid_input dictionary if valid.
+        Checks if the user input is a valid feedback length larger than two, and returns a boolean.
         :param user_input:
         :param attr:
         :return: bool
