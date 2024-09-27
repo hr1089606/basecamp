@@ -29,7 +29,7 @@ class Validate:
         :param attr:
         :return: None
         """
-        if user_input.isalpha and (user_input.lower() == "job offer" or user_input.lower() == "rejection"):
+        if user_input.isalpha and user_input.lower() in ["job offer", "rejection"]:
             setattr(self, attr, user_input.lower())
 
 
