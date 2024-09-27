@@ -170,7 +170,13 @@ class Validate:
 validate = Validate()
 
 
-def is_valid_input(user_input, key):
+def is_valid_input(user_input: str, key: str) -> None:
+    """
+    Validates the user input based and updates the corresponding attribute in the validate object.
+    :param user_input:
+    :param key:
+    :return: None
+    """
     if key == "more_letters" or key == "feedback":
         validate.is_valid_yes_or_no(user_input, key)
     elif key == "offer_or_rejection":
@@ -187,7 +193,8 @@ def is_valid_input(user_input, key):
         validate.is_feedback_valid(user_input, key)
 
 
-def start_predefined_templates():
+def start_predefined_templates() -> None:
+    """Runs the validate questions sequence"""
     validate.common_questions()
 
     if validate.offer_or_rejection == "job offer":
