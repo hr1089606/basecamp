@@ -120,7 +120,7 @@ class Validate:
                 if char != "-":
                     return False
 
-        setattr(self, attr, user_input.lower())
+        setattr(self, attr, user_input.strip())
         return True
 
 
